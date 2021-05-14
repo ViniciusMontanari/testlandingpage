@@ -1,0 +1,177 @@
+body, h1, h2, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: transparent linear-gradient(146deg, #313132 0%, #313132 14%, #161618 100%) 0% 0% no-repeat padding-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "header header header" "aside main main";
+    grid-template-columns: 30vh auto auto;
+    grid-template-rows: auto auto auto;
+    
+}
+
+.aer1 {
+    grid-area: header;
+    margin-top: 35px;
+    margin-left: 35px;
+    padding: 10px;
+}
+
+.aer {
+    text-decoration: none;
+    font: normal normal normal 41px/54px Segoe UI;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 0.41;
+}
+
+/* MENU LATERAL */
+
+.div-menu-lateral {
+    grid-area: aside;
+    max-width: 62%;
+    margin-top: 529px;
+}
+
+
+.div-menu-lateral a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    font: normal normal bold 17px/22px Segoe UI;
+    color: #ACACAC;
+    text-transform: capitalize;
+    transform: rotate(270deg);
+    opacity: 1;
+}
+
+/*  TOP NAVBAR  */
+
+header {
+    grid-area: header;
+    
+}
+
+.top-navbar {
+    padding-left: 50%;
+}
+
+.top-navbar ul {
+    display: flex;
+    padding: 10px;
+    list-style: none;
+}
+
+.top-navbar li {
+    padding: 10px;
+    margin-top: 35px;
+}
+
+.top-navbar li a {
+    display: block;
+    margin-right: 50px;
+    text-decoration: none;
+    text-align: left;
+    font: normal normal normal 14px/20px Bahnschrift;
+    letter-spacing: 0.17px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.top-navbar li:hover a {
+    color: #EFC862;
+    font: normal normal normal 14px/20px Bahnschrift;
+}
+
+.target {
+    position: absolute;
+    margin-top: 30px;
+    border-bottom: 2px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+  }
+
+.top-navbar a, .target {
+    transition: all .10s ease-in-out;
+}
+
+.top-navbar img {
+    max-height: 16px;
+    max-width: 16px;
+    margin-right: 40px;
+}
+
+/*  CONTEUDO (MAIN)  */
+
+.backpack {
+    grid-area: main;
+    
+}
+
+.backpack img {
+    margin-left: 270px;
+    width: 550px;
+    height: 750px;
+    
+}
+
+.colecao {
+    grid-area: main;
+    
+}
+
+.colecao ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.colecao li a{
+    text-align: left;
+    text-decoration: none;
+    font: normal normal normal 13px/32px Segoe UI;
+    letter-spacing: 0.13px;
+    color: #646464;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.colecao li:hover a {
+    color: #FFFFFF;
+    font: normal normal normal 17px/32px Segoe UI;
+}
+
+.colecao h2 {
+    font: normal normal normal 22px/32px Segoe UI;
+    letter-spacing: 0.7px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-top: 180px;
+}
+
+.linha1 {
+    width: 250px;
+    border: 1px solid #707070;
+}
+
+.linha2 {
+    width: 150px;
+    border: 1px solid #EFC862;
+}
+
+
+
+
+
+/*  EVENTOS  */
